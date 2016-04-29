@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+<style>
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+#main{
+}
+
+h2{
+font-family: "Verdana", Sans-serif;
+color: white;
+font-size: 200%;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<center>
+<div id = "main">
+
+</br></br></br></br></br></br></br></br></br>
+<img src = "phone.png"  onClick = "openPhone()" onmouseover="hoverPhone(this);" onmouseout="unhoverPhone(this);" id = "phone" height = "337px" width = "180px" style = "margin-right: 100px">
+<img src = "watch.png" onClick = "openWatch()" id = "watch" onmouseover="hoverWatch(this);" onmouseout="unhoverWatch(this);" height = "337px" width = "150px">
+
+</div>
+
+
+</center>
+
+<script>
+
+function openPhone(){
+window.location = "phone.html";
+}
+
+function openWatch(){
+window.location = "watch.html";
+}
+
+function hoverPhone(element) {
+    element.setAttribute('src', 'phone2.png');
+}
+function hoverWatch(element) {
+    element.setAttribute('src', 'watch2.png');
+}
+function unhoverPhone(element) {
+    element.setAttribute('src', 'phone.png');
+}
+function unhoverWatch(element) {
+    element.setAttribute('src', 'watch.png');
+}
+</script>
+
+</body>
+
+</html>
